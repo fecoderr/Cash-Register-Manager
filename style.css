@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
 
 * {
   padding: 0;
@@ -6,20 +6,12 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
 
 :root {
-  --primary-color: #7c3aed;
+  --primary-color: #828183;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-  min-width: 100vw;
-}
 
-/* Container */
 .container {
   margin: 4rem auto 7rem;
   text-align: center;
@@ -51,6 +43,21 @@ body {
   max-width: 258px;
 }
 
+
+#billamount-confirm {
+  background: var(--primary-color);
+  border: none;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  cursor: pointer;
+  outline: #fff;
+  margin: auto;
+  display: block;
+}
+
+
 #check-button {
   background: var(--primary-color);
   border: none;
@@ -70,7 +77,7 @@ body {
   margin: 1rem 0 0;
 }
 
-/* Table */
+
 .change-table {
   width: 50%;
   text-align: justify;
@@ -92,28 +99,3 @@ td {
   padding: 0.4rem;
 }
 
-/* footer */
-
-footer {
-  text-align: center;
-}
-
-footer p {
-  font-size: large;
-  text-align: center;
-}
-
-.footer-list {
-  margin: 1rem;
-}
-
-a,
-img,
-li {
-  display: inline;
-}
-
-img {
-  width: 40px;
-  padding: 0.2rem;
-}
