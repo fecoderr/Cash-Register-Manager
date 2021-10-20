@@ -23,15 +23,30 @@ checkButton.addEventListener("click", function validateCashAmount() {
   
       hideMessage();
 
+      if (billAmount.value < 0){
+        showMessage("Please enter correct bill amount");
+        }else {
+            
+
+          
       if (Number(billAmount.value) > Number(cashGiven.value)){
-          showErrorMessage("Insufficient cash!!!");
-      }else if (Number(billAmount.value) == Number(cashGiven.value)){
-        showErrorMessage("No change to be paid");
-      }else {
-        const amountToBeReturned = cashGiven.value - billAmount.value; 
-        calculateChange(amountToBeReturned);
-        showErrorMessage("Here you go!!!");
-      }
+        showErrorMessage("Insufficient cash!!!");
+    }else if (Number(billAmount.value) == Number(cashGiven.value)){
+      showErrorMessage("No change to be returned");
+    }else {
+      const amountToBeReturned = cashGiven.value - billAmount.value; 
+      calculateChange(amountToBeReturned);
+      showErrorMessage("Here you go!!!");
+    }
+
+
+
+
+        }
+
+
+      
+
     
 
 });
